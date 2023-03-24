@@ -25,48 +25,7 @@ bool issafe(int arr[][9],int no,int i,int j){
 
 }
 
-// bool solvesudoku(int arr[][9],int n,int i,int j){
-// 	//base case
-// 	if(i==n){
-// 		//print the solution later
-// 		for(int i=0;i<9;i++){
-// 			for(int j=0;j<9;j++){
-// 				cout<<arr[i][j]<<" ";
-// 			}
-// 			cout<<endl;
-// 		}
 
-// 		return true;
-// 	}
-
-// 	//rec case
-// 	if(j==n){
-// 		return solvesudoku(arr,n,i+1,0);
-// 	}
-
-// 	//skip  the prefilled cell
-// 	if(arr[i][j]!=0){
-// 		return solvesudoku(arr,n,i,j+1);
-// 	}
-
-// 	//cell to be filled
-// 	//try out all possibilites
-// 	for(int no=1;no<=n;no++){
-// 		//whether it is safe to place the number or not
-// 		if(issafe(arr,no,i,j)){
-
-// 			arr[i][j] = no;
-// 			bool subproblem = solvesudoku(arr,n,i,j+1);
-// 			if(subproblem==true){
-// 				return true;
-// 			}
-// 		}
-
-// 	}
-// 	// if no option works, backtracking 
-// 	arr[i][j] = 0;
-// 	return false;
-// }
 bool slovesukoku(int arr[][9],int n,int i,int j){
     if(i==n){
         for(int i=0;i<9;i++){
